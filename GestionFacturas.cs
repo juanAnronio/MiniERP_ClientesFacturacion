@@ -88,7 +88,7 @@ namespace MiniERP_ClientesFacturacion
             txtTotal.Clear();
             CargarFacturas();
         }
-
+        //Se mostraran en la lista solo las facturas generadas por el cliente que este seleccionado en el ComboBox
         private void cbClientes_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbClientes.SelectedValue == null || cbClientes.SelectedItem == null)
@@ -101,7 +101,7 @@ namespace MiniERP_ClientesFacturacion
             CargarFacturasPorCliente(clienteId);
         }
 
-        //Se mostraran en la lista solo las facturas generadas por el cliente que este seleccionado en el ComboBox
+        
         private void CargarFacturasPorCliente(int clienteId)
         {
             using (var db = new AppDbContext())
@@ -114,6 +114,7 @@ namespace MiniERP_ClientesFacturacion
                 dgvFacturas.DataSource = lista;
             }
         }
+        //
 
         private void button2_Click(object sender, EventArgs e)
         {
