@@ -96,7 +96,6 @@
             TituloPrincipal.Size = new Size(353, 54);
             TituloPrincipal.TabIndex = 5;
             TituloPrincipal.Text = "Gestion de Factura";
-            TituloPrincipal.Click += label2_Click;
             // 
             // dgvFacturas
             // 

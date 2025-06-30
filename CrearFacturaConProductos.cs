@@ -23,11 +23,6 @@ namespace MiniERP_ClientesFacturacion
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void cbClientes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void CrearFacturaConProductos_Load(object sender, EventArgs e)
         {
             this.Size = new Size(900, 600);

@@ -87,7 +87,6 @@
             cbClientes.Name = "cbClientes";
             cbClientes.Size = new Size(121, 23);
             cbClientes.TabIndex = 4;
-            cbClientes.SelectedIndexChanged += cbClientes_SelectedIndexChanged;
             // 
             // cbProductos
             // 

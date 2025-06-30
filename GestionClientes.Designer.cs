@@ -152,7 +152,6 @@
             Busqueda.Size = new Size(45, 15);
             Busqueda.TabIndex = 11;
             Busqueda.Text = "Buscar:";
-            Busqueda.Click += Busqueda_Click;
             // 
             // textBuscar
             // 

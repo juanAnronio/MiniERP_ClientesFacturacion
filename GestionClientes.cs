@@ -25,7 +25,7 @@ namespace MiniERP_ClientesFacturacion
             this.StartPosition = FormStartPosition.CenterScreen;
             CargarClientes();
         }
-
+        //btn Guardar Clientes
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -130,7 +130,7 @@ namespace MiniERP_ClientesFacturacion
                 clienteIdSeleccionado = clienteSeleccionado.Id;
             }
         }
-
+        //Boton modificar
         private void button2_Click(object sender, EventArgs e)
         {
             if (clienteIdSeleccionado == -1)
@@ -183,11 +183,6 @@ namespace MiniERP_ClientesFacturacion
                     CargarClientes();
                 }
             }
-        }
-
-        private void Busqueda_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -254,7 +249,7 @@ namespace MiniERP_ClientesFacturacion
                 }
 
                 doc.Add(tabla);
-                //Se guarda en bin\Debug\net8.0-windows
+                //Se guarda en bin\Debug\net8.0-windows\Exportaciones
                 MessageBox.Show("PDF exportado correctamente en la carpeta del programa.", "Éxito");
             }
             catch (Exception ex)
